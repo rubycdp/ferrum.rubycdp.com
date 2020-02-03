@@ -1,4 +1,5 @@
-# ferrum
+# Ferrum website
+[🎨 Design](https://www.figma.com/file/ddlhX2qndowpr8l7daBigP/Ferrum-sketches)
 
 ## Project setup
 ```
