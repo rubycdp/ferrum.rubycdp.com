@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import links from '@/data/links.js'
+
 export default {
   name: 'Nav',
   components: {
@@ -20,7 +22,7 @@ export default {
       links: {
         github: {
           text: 'GitHub',
-          path: 'https://github.com/route/ferrum'
+          path: links.ferrum
         }
       }
     }
