@@ -6,6 +6,7 @@
       <About class="home__section home__section_about" />
       <Suggest class="home__section home__section_suggest" />
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Header from '@/components/layout/Header.vue'
 import Index from '@/views/Home/sections/Index.vue'
 import About from '@/views/Home/sections/About.vue'
 import Suggest from '@/views/Home/sections/Suggest.vue'
+import Footer from '@/components/layout/Footer.vue'
 
 export default {
   name: 'home',
@@ -21,7 +23,8 @@ export default {
     Header,
     Index,
     About,
-    Suggest
+    Suggest,
+    Footer
   }
 }
 </script>
