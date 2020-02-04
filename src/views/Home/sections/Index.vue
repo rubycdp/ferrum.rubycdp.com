@@ -7,7 +7,9 @@
     >
       {{ links.ferrum.text }}
     </a>
-    <div class="index__scroll">{{ explore }}</div>
+    <div class="index__scroll">
+      <a href="#scroll-meet" v-smooth-scroll="scrollOptions">{{ explore }}</a>
+    </div>
   </div>
 </template>
 
@@ -25,7 +27,12 @@ export default {
           path: links.ferrum
         }
       },
-      explore: 'Explore'
+      explore: 'Explore',
+      scrollOptions: {
+        duration: 700,
+        offset: -50,
+        updateHistory: false
+      }
     }
   }
 }
@@ -44,9 +51,12 @@ export default {
     margin-bottom: 260px;
   }
   &__scroll {
-    line-height: 1.6;
     margin-bottom: 424px;
-    cursor: pointer;
+    a {
+      display: inline-block;
+      line-height: 1.6;
+      cursor: pointer;
+    }
   }
 }
 </style>
