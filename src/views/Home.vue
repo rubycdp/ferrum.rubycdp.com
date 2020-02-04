@@ -20,7 +20,7 @@ import Footer from '@/components/layout/Footer.vue'
 import Proposal from '@/components/Proposal.vue'
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     Header,
     Index,
@@ -32,5 +32,20 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.home {
+  background: $black;
+  color: $white;
+  font-size: 20px;
+
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 64px;
+  }
+}
 </style>
