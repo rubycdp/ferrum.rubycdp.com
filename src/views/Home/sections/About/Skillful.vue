@@ -105,6 +105,7 @@ export default {
 
 <style lang="scss" scoped>
 .skillful {
+  padding-bottom: 245px;
   &__title-wrapper {
     position: relative;
     display: inline-block;
@@ -133,7 +134,7 @@ export default {
       font-size: 24px;
       font-weight: bold;
       line-height: 1.6;
-      margin-bottom: 24px;
+      margin-bottom: 17px;
       cursor: pointer;
       transition: color .1s;
       &:last-child {
