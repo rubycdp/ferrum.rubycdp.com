@@ -55,4 +55,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.suggest {
+  &__service-list {
+    display: flex;
+  }
+  &__service {
+    max-width: 31%;
+    &:first-child {
+      margin-right: 90px;
+    }
+  }
+  &-service {
+    display: flex;
+    flex-direction: column;
+    &__name {
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+    &__description {
+      line-height: 1.6;
+    }
+    &__link {
+      margin-top: auto;
+      align-self: flex-start;
+      line-height: 1.6;
+      color: $white;
+    }
+  }
+}
 </style>
