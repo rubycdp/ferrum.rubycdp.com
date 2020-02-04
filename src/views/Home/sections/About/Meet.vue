@@ -1,6 +1,9 @@
 <template>
   <div id="scroll-meet" class="meet">
-    <h2 class="meet__title">{{ title }}</h2>
+    <div class="meet__title-wrapper">
+      <h2 class="meet__title">{{ title }}</h2>
+      <SVGMeetTitle />
+    </div>
     <p class="meet__text">{{ text }}</p>
     <div class="meet__advantages">
       <div
@@ -15,8 +18,13 @@
 </template>
 
 <script>
+import SVGMeetTitle from '@/assets/images/home/meet_title.svg'
+
 export default {
   name: 'Meet',
+  components: {
+    SVGMeetTitle
+  },
   data () {
     return {
       title: 'Meet',
@@ -31,6 +39,15 @@ export default {
 
 <style lang="scss" scoped>
 .meet {
+  &__title-wrapper {
+    position: relative;
+    display: inline-block;
+    svg {
+      position: absolute;
+      bottom: 34px;
+      left: 86px;
+    }
+  }
   &__text {
     max-width: 653px;
     line-height: 1.6;
