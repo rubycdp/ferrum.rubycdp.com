@@ -5,6 +5,7 @@
       <SVGThreadSaveTitle />
     </div>
     <p class="thread-safe__text">{{ text }}</p>
+    <img src="@/assets/images/home/thread_safe.png" class="thread-safe__image" />
   </div>
 </template>
 
@@ -28,6 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 .thread-safe {
+  padding-bottom: 310px;
   &__title-wrapper {
     position: relative;
     display: inline-block;
