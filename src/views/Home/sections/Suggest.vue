@@ -66,6 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 .suggest {
+  padding-bottom: 192px;
   &__title-wrapper {
     position: relative;
     display: inline-block;
