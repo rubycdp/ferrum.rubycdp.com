@@ -10,8 +10,8 @@
         v-for="(advantage, key) in advantages"
         :key="key"
       >
-        <img src="" alt="">
-        <span>{{ advantage }}</span>
+        <img :src="getImgUrl(advantage.imgPath)" alt="picture">
+        <span>{{ advantage.text }}</span>
       </div>
     </div>
   </div>
@@ -31,7 +31,30 @@ export default {
       text: `Ferrum provides you a high level API interface to Chrome browser and allows you 
         to fully automate it and grab data from any public site you want. There’s no additional
         software required — only Chrome, Ruby and you.`,
-      advantages: ['Pure Chrome', 'Pure Ruby', 'No addictions']
+      advantages: [
+        {
+          text: 'Pure Chrome',
+          imgPath: '/home/meet_chrome.png'
+        },
+        {
+          text: 'Pure Ruby',
+          imgPath: '/home/meet_ruby.png'
+        },
+        {
+          text: 'No addictions',
+          imgPath: '/home/meet_addictions.png'
+        }
+      ]
+    }
+  },
+  methods: {
+    /**
+     * Get dynamic image path
+     * @param {string} imgPath
+     * @returns string
+     */
+    getImgUrl (imgPath) {
+      return require('@/assets/images' + imgPath)
     }
   }
 }
@@ -39,6 +62,7 @@ export default {
 
 <style lang="scss" scoped>
 .meet {
+  padding-bottom: 360px;
   &__title-wrapper {
     position: relative;
     display: inline-block;
@@ -51,17 +75,21 @@ export default {
   &__text {
     max-width: 653px;
     line-height: 1.6;
+    margin-bottom: 90px;
   }
   &__advantages {
     display: flex;
     div {
       margin-right: 160px;
-      text-align: center;
       &:last-child {
         margin-right: 0;
       }
     }
+    img {
+      margin-bottom: 34px;
+    }
     span {
+      display: inline-block;
       font-size: 24px;
       font-weight: bold;
     }
