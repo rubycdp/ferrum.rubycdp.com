@@ -4,7 +4,7 @@
       v-for="(link, key) in links"
       :key="key"
       :href="link.path"
-      class="nav__link nav__github"
+      class="nav__link"
       :target="isExternalLink(link) ? '_blank' : '_self'"
     >
       {{ link.text }}
@@ -46,4 +46,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.nav {
+  &__link {
+    display: inline-block;
+    padding: 2px 0;
+    margin-right: 24px;
+    color: $white;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
 </style>
