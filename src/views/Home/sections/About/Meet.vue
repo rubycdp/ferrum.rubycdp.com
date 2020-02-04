@@ -1,5 +1,5 @@
 <template>
-  <div class="meet">
+  <div id="scroll-meet" class="meet">
     <h2 class="meet__title">{{ title }}</h2>
     <p class="meet__text">{{ text }}</p>
     <div class="meet__advantages">
