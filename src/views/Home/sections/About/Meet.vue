@@ -7,7 +7,7 @@
         v-for="(advantage, key) in advantages"
         :key="key"
       >
-        <img src="" alt="advantage">
+        <img src="" alt="">
         <span>{{ advantage }}</span>
       </div>
     </div>
@@ -30,4 +30,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.meet {
+  &__text {
+    max-width: 653px;
+    line-height: 1.6;
+  }
+  &__advantages {
+    display: flex;
+    div {
+      margin-right: 160px;
+      text-align: center;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    span {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
 </style>
