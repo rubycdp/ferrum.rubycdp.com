@@ -52,6 +52,10 @@ export default {
     line-height: 1.6;
     margin-right: 24px;
     color: $white;
+    transition: color .1s;
+    &:hover {
+      color: $red;
+    }
     &:last-child {
       margin-right: 0;
     }
