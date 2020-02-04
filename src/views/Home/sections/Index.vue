@@ -56,6 +56,8 @@ export default {
   justify-content: space-between;
   height: 100vh;
   min-height: 100%;
+  max-height: 1400px;
+  background: url("../../../assets/images/home/cover_illistration.png") 99% 29%/70% no-repeat;
   &__title {
     max-width: 590px;
     margin: 10px 0;
