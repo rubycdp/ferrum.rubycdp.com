@@ -1,9 +1,11 @@
 <template>
   <div class="proposal">
-      <a target="_blank" :href="path" class="proposal__link">
-        <div class="proposal__text">{{ text }}</div>
-        <div class="proposal__logo"></div>
-      </a>
+      <div class="container">
+        <a target="_blank" :href="path" class="proposal__link">
+          <div class="proposal__text">{{ text }}</div>
+          <div class="proposal__logo"></div>
+        </a>
+      </div>
   </div>
 </template>
 

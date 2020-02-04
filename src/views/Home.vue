@@ -1,12 +1,14 @@
 <template>
   <div class="home">
-    <Header class="home__header" />
-    <div class="home__section-list">
-      <Index class="home__section home__section_index" />
-      <About class="home__section home__section_about" />
-      <Suggest class="home__section home__section_suggest" />
+    <div class="container">
+      <Header class="home__header" />
+      <div class="home__section-list">
+        <Index class="home__section home__section_index" />
+        <About class="home__section home__section_about" />
+        <Suggest class="home__section home__section_suggest" />
+      </div>
+      <Footer />
     </div>
-    <Footer />
     <Proposal />
   </div>
 </template>
@@ -37,6 +39,9 @@ export default {
   background: $black;
   color: $white;
   font-size: 20px;
+  .container {
+    @include page-container;
+  }
 
   a {
     text-decoration: none;
