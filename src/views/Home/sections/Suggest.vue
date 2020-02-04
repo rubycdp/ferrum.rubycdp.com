@@ -1,6 +1,9 @@
 <template>
   <div class="suggest">
-    <h2 class="suggest__title">{{ title }}</h2>
+    <div class="suggest__title-wrapper">
+      <h2 class="suggest__title">{{ title }}</h2>
+      <SVGUsefulTitle />
+    </div>
     <div class="suggest__service-list">
       <div
         class="suggest__service suggest-service"
@@ -24,11 +27,13 @@
 
 <script>
 import links from '@/data/links.js'
+import SVGUsefulTitle from '@/assets/images/home/useful_title.svg'
 import SVGArrowLeft from '@/assets/images/home/arrow_left.svg'
 
 export default {
   name: 'Suggest',
   components: {
+    SVGUsefulTitle,
     SVGArrowLeft
   },
   data () {
@@ -61,6 +66,17 @@ export default {
 
 <style lang="scss" scoped>
 .suggest {
+  &__title-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 43px;
+    svg {
+      position: absolute;
+      right: -54px;
+      bottom: 50%;
+      transform: translateY(47%);
+    }
+  }
   &__service-list {
     display: flex;
   }
