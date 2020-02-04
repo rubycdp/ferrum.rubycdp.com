@@ -1,5 +1,6 @@
 <template>
   <div class="index">
+    <Header class="home__header" />
     <h1 class="index__title">{{ title }}</h1>
     <div class="index__link">
       <a :href="links.ferrum.path" target="_blank">
@@ -20,12 +21,14 @@
 import links from '@/data/links.js'
 import SVGUnderline from '@/assets/images/home/underline.svg'
 import SVGArrowDown from '@/assets/images/home/arrow_down.svg'
+import Header from '@/components/layout/Header.vue'
 
 export default {
   name: 'Index',
   components: {
     SVGUnderline,
-    SVGArrowDown
+    SVGArrowDown,
+    Header
   },
   data () {
     return {
@@ -48,13 +51,20 @@ export default {
 
 <style lang="scss" scoped>
 .index {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  min-height: 100%;
   &__title {
     max-width: 590px;
+    margin: 10px 0;
   }
   &__link {
     position: relative;
     display: inline-block;
-    margin-bottom: 260px;
+    align-self: flex-start;
+    margin-bottom: 30px;
     cursor: pointer;
     &:hover {
       a {
@@ -74,7 +84,7 @@ export default {
     }
   }
   &__scroll {
-    margin-bottom: 424px;
+    padding-bottom: 25px;
     a {
       display: inline-flex;
       align-items: center;
