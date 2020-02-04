@@ -32,4 +32,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.index {
+  &__title {
+    max-width: 590px;
+    text-transform: uppercase;
+  }
+  &__link {
+    display: inline-block;
+    color: $red;
+    line-height: 1.6;
+    margin-bottom: 260px;
+  }
+  &__scroll {
+    line-height: 1.6;
+    margin-bottom: 424px;
+    cursor: pointer;
+  }
+}
 </style>
