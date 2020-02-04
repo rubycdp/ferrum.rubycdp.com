@@ -53,6 +53,7 @@ export default {
   &__scroll {
     margin-bottom: 424px;
     a {
+      color: $white;
       display: inline-block;
       line-height: 1.6;
       cursor: pointer;
