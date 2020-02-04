@@ -1,11 +1,13 @@
 <template>
   <nav class="nav">
     <a
+      v-for="(link, key) in links"
+      :key="key"
+      :href="link.path"
       class="nav__link nav__github"
-      :href="links.github.path"
-      target="_blank"
+      :target="isExternalLink(link) ? '_blank' : '_self'"
     >
-      {{ links.github.text }}
+      {{ link.text }}
     </a>
   </nav>
 </template>
@@ -19,12 +21,25 @@ export default {
   },
   data () {
     return {
-      links: {
-        github: {
+      links: [
+        {
+          text: 'Docs',
+          path: '/docs'
+        },
+        {
           text: 'GitHub',
           path: links.ferrum
         }
-      }
+      ]
+    }
+  },
+  methods: {
+    /**
+     * @param {object} link
+     * @returns boolean
+     */
+    isExternalLink (link) {
+      return link.path[0] !== '/'
     }
   }
 }
