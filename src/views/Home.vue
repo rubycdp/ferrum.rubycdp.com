@@ -47,5 +47,8 @@ export default {
   h2 {
     font-size: 64px;
   }
+  h1, h2 {
+    text-transform: uppercase;
+  }
 }
 </style>

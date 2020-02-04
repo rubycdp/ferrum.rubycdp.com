@@ -42,7 +42,6 @@ export default {
 .index {
   &__title {
     max-width: 590px;
-    text-transform: uppercase;
   }
   &__link {
     display: inline-block;
