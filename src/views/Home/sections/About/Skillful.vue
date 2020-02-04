@@ -28,4 +28,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.skillful {
+  &__skills {
+    div {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.6;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
 </style>
