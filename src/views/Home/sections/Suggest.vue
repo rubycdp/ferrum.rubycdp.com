@@ -14,7 +14,8 @@
           target="_blank"
           class="suggest-service__link"
         >
-          {{ service.link.text }}
+          <SVGArrowLeft />
+          <span>{{ service.link.text }}</span>
         </a>
       </div>
     </div>
@@ -23,9 +24,13 @@
 
 <script>
 import links from '@/data/links.js'
+import SVGArrowLeft from '@/assets/images/home/arrow_left.svg'
 
 export default {
   name: 'Suggest',
+  components: {
+    SVGArrowLeft
+  },
   data () {
     return {
       title: 'USEFUL',
@@ -60,7 +65,7 @@ export default {
     display: flex;
   }
   &__service {
-    max-width: 31%;
+    max-width: 46%;
     &:first-child {
       margin-right: 90px;
     }
@@ -72,15 +77,30 @@ export default {
       font-size: 32px;
       font-weight: bold;
       line-height: 1.6;
+      margin-bottom: 32px;
     }
     &__description {
       line-height: 1.6;
+      margin-bottom: 54px;
     }
     &__link {
       margin-top: auto;
       align-self: flex-start;
       line-height: 1.6;
       color: $white;
+      transition: color .1s;
+      &:hover {
+        color: $red;
+        svg path {
+          fill: $red;
+        }
+      }
+      svg {
+        margin-right: 24px;
+        path {
+          transition: fill .1s;
+        }
+      }
     }
   }
 }
