@@ -8,7 +8,10 @@
       <SVGUnderline />
     </div>
     <div class="index__scroll">
-      <a href="#scroll-meet" v-smooth-scroll="scrollOptions">{{ explore }}</a>
+      <a href="#scroll-meet" v-smooth-scroll="scrollOptions">
+        <SVGUArrowDown />
+        <span>{{ explore }}</span>
+      </a>
     </div>
   </div>
 </template>
@@ -16,11 +19,13 @@
 <script>
 import links from '@/data/links.js'
 import SVGUnderline from '@/assets/images/home/underline.svg'
+import SVGUArrowDown from '@/assets/images/home/arrow_down.svg'
 
 export default {
   name: 'Index',
   components: {
-    SVGUnderline
+    SVGUnderline,
+    SVGUArrowDown
   },
   data () {
     return {
@@ -72,10 +77,23 @@ export default {
   &__scroll {
     margin-bottom: 424px;
     a {
+      display: inline-flex;
+      align-items: center;
       color: $white;
-      display: inline-block;
       line-height: 1.6;
-      cursor: pointer;
+      transition: color .1s;
+      &:hover {
+        color: $red;
+        svg path {
+          fill: $red;
+        }
+      }
+      svg {
+        margin-right: 24px;
+        path {
+          transition: fill .1s;
+        }
+      }
     }
   }
 }
