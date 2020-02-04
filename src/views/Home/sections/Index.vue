@@ -9,7 +9,7 @@
     </div>
     <div class="index__scroll">
       <a href="#scroll-meet" v-smooth-scroll="scrollOptions">
-        <SVGUArrowDown />
+        <SVGArrowDown />
         <span>{{ explore }}</span>
       </a>
     </div>
@@ -19,13 +19,13 @@
 <script>
 import links from '@/data/links.js'
 import SVGUnderline from '@/assets/images/home/underline.svg'
-import SVGUArrowDown from '@/assets/images/home/arrow_down.svg'
+import SVGArrowDown from '@/assets/images/home/arrow_down.svg'
 
 export default {
   name: 'Index',
   components: {
     SVGUnderline,
-    SVGUArrowDown
+    SVGArrowDown
   },
   data () {
     return {
