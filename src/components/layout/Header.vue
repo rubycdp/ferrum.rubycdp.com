@@ -19,4 +19,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 39px 0;
+}
 </style>
