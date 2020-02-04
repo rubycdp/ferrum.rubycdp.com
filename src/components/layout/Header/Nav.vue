@@ -49,7 +49,7 @@ export default {
 .nav {
   &__link {
     display: inline-block;
-    padding: 2px 0;
+    line-height: 1.6;
     margin-right: 24px;
     color: $white;
     &:last-child {
