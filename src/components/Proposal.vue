@@ -3,7 +3,7 @@
       <div class="container">
         <a target="_blank" :href="path" class="proposal__link">
           <div class="proposal__text">{{ text }}</div>
-          <div class="proposal__logo"></div>
+          <SVGLetsTryLogo />
         </a>
       </div>
   </div>
@@ -11,9 +11,13 @@
 
 <script>
 import links from '@/data/links.js'
+import SVGLetsTryLogo from '@/assets/images/home/letstry_title.svg'
 
 export default {
   name: 'Proposal',
+  components: {
+    SVGLetsTryLogo
+  },
   data () {
     return {
       text: 'Let’s try',
@@ -28,7 +32,13 @@ export default {
   padding: 114px 0;
   background: $red;
   &__link {
+    position: relative;
     display: inline-block;
+    svg {
+      position: absolute;
+      bottom: -35px;
+      right: -68px;
+    }
   }
   &__text {
     font-size: 80px;
