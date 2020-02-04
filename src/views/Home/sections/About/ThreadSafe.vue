@@ -19,4 +19,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.thread-safe {
+  &__text {
+    max-width: 665px;
+    line-height: 1.6;
+  }
+}
 </style>
