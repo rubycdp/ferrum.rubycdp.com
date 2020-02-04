@@ -1,14 +1,18 @@
 <template>
   <div class="home">
-    <div class="container">
-      <div class="home__section-list">
-        <Index class="home__section home__section_index" />
-        <About class="home__section home__section_about" />
-        <Suggest class="home__section home__section_suggest" />
+    <div class="z-index-wrapper z-index-wrapper_top">
+      <div class="container">
+        <div class="home__section-list">
+          <Index class="home__section home__section_index" />
+          <About class="home__section home__section_about" />
+          <Suggest class="home__section home__section_suggest" />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
-    <Proposal />
+    <div class="z-index-wrapper z-index-wrapper_bottom">
+      <Proposal />
+    </div>
   </div>
 </template>
 
@@ -52,6 +56,21 @@ export default {
   }
   h1, h2 {
     text-transform: uppercase;
+  }
+  .z-index-wrapper {
+    position: relative;
+    &_top {
+      z-index: 2;
+      background: $black;
+      margin-bottom: 320px;
+    }
+    &_bottom {
+      z-index: 1;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
   }
 }
 </style>
