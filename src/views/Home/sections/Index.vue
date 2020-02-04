@@ -39,7 +39,6 @@ export default {
       explore: 'Explore',
       scrollOptions: {
         duration: 700,
-        offset: -50,
         updateHistory: false
       }
     }
