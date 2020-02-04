@@ -6,14 +6,19 @@
       <SVGSkillTitleRight />
     </div>
     <div class="skillful__skills">
-      <div
-        :class="getSkillClassList(index)"
-        v-for="(skill, index) in skills"
-        :key="index"
-        @click="setActiveSkillNumber(index)"
-      >
-        <span>{{ skill }}</span>
-        <SVGUnderline />
+      <div class="skillful__triggers">
+        <div
+          :class="getSkillClassList(index)"
+          v-for="(skill, index) in skills"
+          :key="index"
+          @click="setActiveSkillNumber(index)"
+        >
+          <span>{{ skill.name }}</span>
+          <SVGUnderline />
+        </div>
+      </div>
+      <div class="skillful__slides">
+        <img :src="activeSkillImagePath" alt="skill">
       </div>
     </div>
   </div>
@@ -35,10 +40,37 @@ export default {
     return {
       title: 'Skillful',
       skills: [
-        'Navigation & finders', 'Screenshots', 'Mouse & keyboard',
-        'Network, cookies, headers', 'JS, frames, dialogs'
+        {
+          name: 'Navigation & finders',
+          imgName: 'skill_02.png'
+        },
+        {
+          name: 'Screenshots',
+          imgName: 'skill_02.png'
+        },
+        {
+          name: 'Mouse & keyboard',
+          imgName: 'skill_02.png'
+        },
+        {
+          name: 'Network, cookies, headers',
+          imgName: 'skill_02.png'
+        },
+        {
+          name: 'JS, frames, dialogs',
+          imgName: 'skill_02.png'
+        }
       ],
       activeSkillNumber: 0
+    }
+  },
+  computed: {
+    /**
+     * @returns string
+     */
+    activeSkillImagePath () {
+      const imgName = this.skills[this.activeSkillNumber].imgName
+      return this.getImgUrl(imgName)
     }
   },
   methods: {
@@ -58,6 +90,14 @@ export default {
      */
     setActiveSkillNumber (index) {
       this.activeSkillNumber = index
+    },
+    /**
+     * Get dynamic image path
+     * @param {string} imgPath
+     * @returns string
+     */
+    getImgUrl (imgName) {
+      return require('@/assets/images/home/' + imgName)
     }
   }
 }
@@ -82,6 +122,9 @@ export default {
     }
   }
   &__skills {
+    display: flex;
+  }
+  &__triggers {
     display: flex;
     flex-direction: column;
     .skillful-skill {
@@ -118,6 +161,10 @@ export default {
         }
       }
     }
+  }
+  &__slides {
+    margin-top: -68px;
+    margin-left: auto;
   }
 }
 </style>
