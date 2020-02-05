@@ -93,12 +93,12 @@ export default {
     &__name {
       font-size: 32px;
       font-weight: bold;
-      line-height: 1.6;
+      line-height: 100%;
       margin-bottom: 32px;
     }
     &__description {
       line-height: 1.6;
-      margin-bottom: 54px;
+      margin-bottom: 48px;
     }
     &__link {
       margin-top: auto;

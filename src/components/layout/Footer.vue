@@ -39,7 +39,7 @@ export default {
   padding: 48px 0;
   &__developer, &__developer a {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 2;
   }
   .color-dim {
     opacity: .3;
