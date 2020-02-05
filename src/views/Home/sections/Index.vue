@@ -9,6 +9,7 @@
         </a>
         <SVGUnderline />
       </div>
+      <img class="index__bg-image" src="@/assets/images/home/cover_illistration.png" alt="image">
     </div>
     <div class="index__scroll">
       <a href="#scroll-meet" v-smooth-scroll="scrollOptions">
@@ -62,16 +63,25 @@ export default {
   background: url("../../../assets/images/home/cover_illistration.png") 99% 29%/70% no-repeat;
   @include md {
     height: 100%;
-    background-position: 50% 103%;
+    background-position: 50% 143%;
     background-size: 100%;
     margin-bottom: 315px;
   }
   @include sm {
-    margin-bottom: 160px;
+    margin-bottom: 120px;
   }
-  @media screen and (max-width: 330px) {
-    background-position: -55px 124%;
-    background-size: 122%;
+  @include xs {
+    background: transparent;
+  }
+  &__bg-image {
+    display: none;
+    margin-left: -22%;
+    margin-top: -5%;
+    width: 126%;
+    max-width: fit-content;
+    @include xs {
+      display: block;
+    }
   }
   &__header {
     @include sm {
@@ -98,8 +108,11 @@ export default {
     @include md {
       margin-bottom: 480px;
     }
+    @include sm {
+      margin-bottom: 384px;
+    }
     @include xs {
-      margin-bottom: 264px;
+      margin-bottom: 0px;
     }
 
     &:hover {
