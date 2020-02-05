@@ -69,7 +69,7 @@ export default {
   @include sm {
     margin-bottom: 160px;
   }
-  @include xs {
+  @media screen and (max-width: 330px) {
     background-position: -55px 124%;
     background-size: 122%;
   }
@@ -84,7 +84,7 @@ export default {
     @include sm {
       max-width: 295px;
     }
-    @include sm {
+    @include xxs {
       letter-spacing: -0.04em;
       margin-bottom: 16px;
     }

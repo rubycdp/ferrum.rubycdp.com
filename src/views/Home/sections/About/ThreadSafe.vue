@@ -43,7 +43,7 @@ export default {
       transform: translateY(-45%);
       @include sm {
         right: -39px;
-        transform: translateY(-47%);
+        transform: translateY(-22%);
       }
       @include xs {
         right: auto;
@@ -57,7 +57,7 @@ export default {
     @include sm {
       margin-bottom: 24px;
     }
-    @include sm {
+    @include xs {
       max-width: 275px;
     }
   }
