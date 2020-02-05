@@ -1,12 +1,14 @@
 <template>
   <div class="index">
     <Header class="home__header" />
-    <h1 class="index__title">{{ title }}</h1>
-    <div class="index__link">
-      <a :href="links.ferrum.path" target="_blank">
-        {{ links.ferrum.text }}
-      </a>
-      <SVGUnderline />
+    <div class="index__center-wrapper">
+      <h1 class="index__title">{{ title }}</h1>
+      <div class="index__link">
+        <a :href="links.ferrum.path" target="_blank">
+          {{ links.ferrum.text }}
+        </a>
+        <SVGUnderline />
+      </div>
     </div>
     <div class="index__scroll">
       <a href="#scroll-meet" v-smooth-scroll="scrollOptions">
@@ -60,7 +62,7 @@ export default {
   background: url("../../../assets/images/home/cover_illistration.png") 99% 29%/70% no-repeat;
   &__title {
     max-width: 590px;
-    margin: 10px 0;
+    margin: 10px 0 32px;
   }
   &__link {
     position: relative;
