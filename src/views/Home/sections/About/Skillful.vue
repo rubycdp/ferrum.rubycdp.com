@@ -105,7 +105,7 @@ export default {
 
 <style lang="scss" scoped>
 .skillful {
-  padding-bottom: 245px;
+  padding-bottom: 242px;
   &__title-wrapper {
     position: relative;
     display: inline-block;

@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 .thread-safe {
-  padding-bottom: 310px;
+  padding-bottom: 307px;
   &__title-wrapper {
     position: relative;
     display: inline-block;
@@ -40,9 +40,13 @@ export default {
       transform: translateY(-45%);
     }
   }
+  &__title {
+    margin-bottom: 48px;
+  }
   &__text {
     max-width: 665px;
     line-height: 1.6;
+    margin: 0;
   }
 }
 </style>
