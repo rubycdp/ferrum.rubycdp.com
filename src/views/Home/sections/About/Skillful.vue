@@ -128,6 +128,10 @@ export default {
   &__triggers {
     display: flex;
     flex-direction: column;
+    @include lg {
+      flex-shrink: 0;
+      margin-right: 70px;
+    }
     .skillful-skill {
       position: relative;
       align-self: flex-start;
@@ -166,6 +170,9 @@ export default {
   &__slides {
     margin-top: -68px;
     margin-left: auto;
+    @include lg {
+      margin-top: 0;
+    }
   }
 }
 </style>

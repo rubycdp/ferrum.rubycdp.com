@@ -84,7 +84,12 @@ export default {
   &__advantages {
     display: flex;
     div {
+      display: flex;
+      flex-direction: column;
       margin-right: 160px;
+      @include lg {
+        margin-right: 11.92%;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -96,6 +101,7 @@ export default {
       display: inline-block;
       font-size: 24px;
       font-weight: bold;
+      margin-top: auto;
     }
   }
 }
