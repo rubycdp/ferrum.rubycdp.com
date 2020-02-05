@@ -71,8 +71,8 @@ export default {
     display: inline-block;
     svg {
       position: absolute;
-      bottom: 34px;
-      left: 86px;
+      bottom: 24px;
+      left: 92px;
       @include sm {
         transform: scale(0.6641);
         bottom: 21px;
