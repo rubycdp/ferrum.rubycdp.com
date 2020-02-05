@@ -5,9 +5,9 @@
 
   @include xs {
   }
-  @include sm {
+  @include xs {
     padding: 0 24px;
   }
-  @include md {
+  @include sm {
   }
 }
