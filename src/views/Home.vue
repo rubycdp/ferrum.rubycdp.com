@@ -31,6 +31,19 @@ export default {
     Suggest,
     Footer,
     Proposal
+  },
+  mounted () {
+    this.setBodyBgBlack()
+  },
+  methods: {
+    /**
+     * Need it for ios devices to avoid
+     * showing white background on scroll
+     * @returns void
+     */
+    setBodyBgBlack () {
+      document.body.classList.add('bg-black')
+    }
   }
 }
 </script>
