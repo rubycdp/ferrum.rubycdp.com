@@ -92,13 +92,24 @@ export default {
   }
   &__service-list {
     display: flex;
+    @include sm {
+      flex-wrap: wrap;
+    }
   }
   &__service {
     max-width: 46%;
+    @include sm {
+      max-width: 100%;
+      margin-right: 0;
+    }
     &:first-child {
       margin-right: 90px;
       @include md {
         margin-right: 58px;
+      }
+      @include sm {
+        margin-right: 0;
+        margin-bottom: 64px;
       }
     }
   }

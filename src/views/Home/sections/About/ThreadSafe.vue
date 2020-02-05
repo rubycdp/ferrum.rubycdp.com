@@ -45,6 +45,11 @@ export default {
         right: -39px;
         transform: translateY(-47%);
       }
+      @include sm {
+        right: auto;
+        left: 86px;
+        transform: translateY(19%);
+      }
     }
   }
   &__title {
@@ -52,11 +57,25 @@ export default {
     @include md {
       margin-bottom: 24px;
     }
+    @include md {
+      max-width: 275px;
+    }
   }
   &__text {
     max-width: 665px;
     line-height: 1.6;
     margin: 0;
+    @include sm {
+      margin-bottom: 48px;
+    }
+  }
+  &__image {
+    @include sm {
+      width: 187%;
+      max-width: fit-content;
+      margin-right: 28px;
+      margin-left: -89%;
+    }
   }
 }
 </style>

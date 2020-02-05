@@ -141,6 +141,9 @@ export default {
   }
   &__skills {
     display: flex;
+    @include sm {
+      flex-wrap: wrap;
+    }
   }
   &__triggers {
     display: flex;
@@ -152,6 +155,16 @@ export default {
     @include md {
       flex-shrink: 0;
       margin-right: 25px;
+    }
+    @include sm {
+      flex-direction: initial;
+      overflow-x: auto;
+      max-width: 100%;
+      margin-left: -24px;
+      margin-right: -24px;
+      padding: 4px 16px;
+      padding-bottom: 20px;
+      margin-bottom: 28px;
     }
     .skillful-skill {
       position: relative;
@@ -166,6 +179,14 @@ export default {
         font-size: 20px;
         margin-bottom: 16px;
         line-height: 1.2;
+      }
+      @include sm {
+        margin-bottom: 0px;
+        margin-right: 16px;
+        white-space: nowrap;
+        &:last-child {
+          margin-right: 16px;
+        }
       }
       &:last-child {
         margin-bottom: 0;
@@ -198,6 +219,9 @@ export default {
     margin-left: auto;
     @include lg {
       margin-top: 0;
+    }
+    @include sm {
+      padding: 0 16px;
     }
   }
 }

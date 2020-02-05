@@ -69,6 +69,10 @@ export default {
   @include md {
     margin-bottom: 160px;
   }
+  @include sm {
+    background-position: -55px 124%;
+    background-size: 122%;
+  }
   &__header {
     @include md {
       margin-bottom: 22px;
@@ -80,6 +84,10 @@ export default {
     @include md {
       max-width: 295px;
     }
+    @include md {
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+    }
   }
   &__link {
     position: relative;
@@ -89,6 +97,9 @@ export default {
     cursor: pointer;
     @include lg {
       margin-bottom: 480px;
+    }
+    @include sm {
+      margin-bottom: 264px;
     }
 
     &:hover {

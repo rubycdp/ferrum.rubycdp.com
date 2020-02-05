@@ -78,10 +78,16 @@ export default {
         bottom: 21px;
         left: 38px;
       }
+      @include sm {
+        bottom: -3px;
+      }
     }
   }
   &__title {
     margin-bottom: 48px;
+    @include sm {
+      margin-bottom: 24px;
+    }
   }
   &__text {
     max-width: 653px;
@@ -94,6 +100,10 @@ export default {
   }
   &__advantages {
     display: flex;
+    @include sm {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     div {
       display: flex;
       flex-direction: column;
@@ -103,6 +113,13 @@ export default {
       }
       @include md {
         margin-right: 8.48%;
+      }
+      @include sm {
+        margin-right: 0;
+        margin-bottom: 34px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
       &:last-child {
         margin-right: 0;
