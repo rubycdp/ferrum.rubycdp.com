@@ -106,11 +106,11 @@ export default {
 <style lang="scss" scoped>
 .skillful {
   padding-bottom: 242px;
-  @include md {
+  @include sm {
     padding-bottom: 120px;
   }
   &__title {
-    @include md {
+    @include sm {
       margin-bottom: 32px;
     }
   }
@@ -118,7 +118,7 @@ export default {
     position: relative;
     display: inline-block;
     margin-bottom: 43px;
-    @include md {
+    @include sm {
       margin-bottom: 0;
     }
     svg {
@@ -127,13 +127,13 @@ export default {
       transform: translateY(48%);
       &:first-child {
         left: -18px;
-        @include md {
+        @include sm {
           transform: scale(0.6641) translate(0px, 75%);
         }
       }
       &:last-child {
         right: -41px;
-        @include md {
+        @include sm {
           transform: scale(0.6641) translate(-20px, 80%);
         }
       }
@@ -141,22 +141,22 @@ export default {
   }
   &__skills {
     display: flex;
-    @include sm {
+    @include xs {
       flex-wrap: wrap;
     }
   }
   &__triggers {
     display: flex;
     flex-direction: column;
-    @include lg {
+    @include md {
       flex-shrink: 0;
       margin-right: 70px;
     }
-    @include md {
+    @include sm {
       flex-shrink: 0;
       margin-right: 25px;
     }
-    @include sm {
+    @include xs {
       flex-direction: initial;
       overflow-x: auto;
       max-width: 100%;
@@ -175,12 +175,12 @@ export default {
       margin-bottom: 24px;
       cursor: pointer;
       transition: color .1s;
-      @include md {
+      @include sm {
         font-size: 20px;
         margin-bottom: 16px;
         line-height: 1.2;
       }
-      @include sm {
+      @include xs {
         margin-bottom: 0px;
         margin-right: 16px;
         white-space: nowrap;
@@ -217,10 +217,10 @@ export default {
   &__slides {
     margin-top: -68px;
     margin-left: auto;
-    @include lg {
+    @include md {
       margin-top: 0;
     }
-    @include sm {
+    @include xs {
       padding: 0 16px;
     }
   }

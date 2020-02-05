@@ -31,20 +31,20 @@ export default {
 .proposal {
   padding: 114px 0;
   background: $red;
-  @include md {
+  @include sm {
     padding: 60px 0;
   }
   &__link {
     position: relative;
     display: inline-block;
-    @include md {
+    @include sm {
       line-height: 1;
     }
     svg {
       position: absolute;
       bottom: -35px;
       right: -68px;
-      @include md {
+      @include sm {
         transform: scale(0.5) translate(89px, 1px);
       }
     }
@@ -54,7 +54,7 @@ export default {
     font-weight: bold;
     color: $black;
     text-transform: uppercase;
-    @include md {
+    @include sm {
       font-size: 40px;
     }
   }

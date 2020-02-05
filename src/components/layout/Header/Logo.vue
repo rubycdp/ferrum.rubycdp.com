@@ -17,7 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 .logo {
-  @include md {
+  @include sm {
     transform: scale(0.6641) translate(-31px, -9px);
     max-height: 32px;
   }

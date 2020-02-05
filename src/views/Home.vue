@@ -41,7 +41,7 @@ export default {
   background: $black;
   color: $white;
   font-size: 20px;
-  @include md {
+  @include sm {
     font-size: 16px;
   }
   .container {
@@ -53,13 +53,13 @@ export default {
   }
   h1 {
     font-size: 80px;
-    @include md {
+    @include sm {
       font-size: 40px;
     }
   }
   h2 {
     font-size: 64px;
-    @include md {
+    @include sm {
       font-size: 48px;
     }
   }
@@ -73,7 +73,7 @@ export default {
       z-index: 2;
       background: $black;
       margin-bottom: 320px;
-      @include md {
+      @include sm {
         margin-bottom: 160px;
       }
     }

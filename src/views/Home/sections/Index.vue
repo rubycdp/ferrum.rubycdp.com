@@ -60,31 +60,31 @@ export default {
   min-height: 100%;
   max-height: 1400px;
   background: url("../../../assets/images/home/cover_illistration.png") 99% 29%/70% no-repeat;
-  @include lg {
+  @include md {
     height: 100%;
     background-position: 50% 103%;
     background-size: 100%;
     margin-bottom: 315px;
   }
-  @include md {
+  @include sm {
     margin-bottom: 160px;
   }
-  @include sm {
+  @include xs {
     background-position: -55px 124%;
     background-size: 122%;
   }
   &__header {
-    @include md {
+    @include sm {
       margin-bottom: 22px;
     }
   }
   &__title {
     max-width: 590px;
     margin: 10px 0 32px;
-    @include md {
+    @include sm {
       max-width: 295px;
     }
-    @include md {
+    @include sm {
       letter-spacing: -0.04em;
       margin-bottom: 16px;
     }
@@ -95,10 +95,10 @@ export default {
     align-self: flex-start;
     margin-bottom: 30px;
     cursor: pointer;
-    @include lg {
+    @include md {
       margin-bottom: 480px;
     }
-    @include sm {
+    @include xs {
       margin-bottom: 264px;
     }
 
@@ -117,17 +117,17 @@ export default {
       position: absolute;
       bottom: -5px;
       left: 0;
-      @include md {
+      @include sm {
         transform: scale(0.7891) translate(-17px, 2px);
       }
     }
   }
   &__scroll {
     padding-bottom: 25px;
-    @include lg {
+    @include md {
       padding-bottom: 0px;
     }
-    @include md {
+    @include sm {
       display: none;
     }
     a {

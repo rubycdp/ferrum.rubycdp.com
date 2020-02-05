@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
 .thread-safe {
   padding-bottom: 307px;
-  @include md {
+  @include sm {
     padding-bottom: 120px;
   }
   &__title-wrapper {
@@ -41,11 +41,11 @@ export default {
       right: -64px;
       top: 50%;
       transform: translateY(-45%);
-      @include md {
+      @include sm {
         right: -39px;
         transform: translateY(-47%);
       }
-      @include sm {
+      @include xs {
         right: auto;
         left: 86px;
         transform: translateY(19%);
@@ -54,10 +54,10 @@ export default {
   }
   &__title {
     margin-bottom: 48px;
-    @include md {
+    @include sm {
       margin-bottom: 24px;
     }
-    @include md {
+    @include sm {
       max-width: 275px;
     }
   }
@@ -65,12 +65,12 @@ export default {
     max-width: 665px;
     line-height: 1.6;
     margin: 0;
-    @include sm {
+    @include xs {
       margin-bottom: 48px;
     }
   }
   &__image {
-    @include sm {
+    @include xs {
       width: 187%;
       max-width: fit-content;
       margin-right: 28px;

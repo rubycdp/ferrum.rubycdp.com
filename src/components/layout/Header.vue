@@ -24,7 +24,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 40px 0;
-  @include md {
+  @include sm {
     padding: 16px 0;
   }
 }
