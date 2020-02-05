@@ -72,10 +72,14 @@ export default {
       left: 86px;
     }
   }
+  &__title {
+    margin-bottom: 48px;
+  }
   &__text {
     max-width: 653px;
     line-height: 1.6;
-    margin-bottom: 90px;
+    margin-bottom: 95px;
+    margin-top: 0;
   }
   &__advantages {
     display: flex;

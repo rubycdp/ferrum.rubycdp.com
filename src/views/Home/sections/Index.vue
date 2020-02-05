@@ -63,7 +63,6 @@ export default {
   &__title {
     max-width: 590px;
     margin: 10px 0 32px;
-    line-height: 100%;
   }
   &__link {
     position: relative;

@@ -56,6 +56,7 @@ export default {
   }
   h1, h2 {
     text-transform: uppercase;
+    line-height: 100%;
   }
   .z-index-wrapper {
     position: relative;
