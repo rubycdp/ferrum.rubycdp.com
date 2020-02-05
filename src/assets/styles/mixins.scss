@@ -11,24 +11,3 @@
     padding: 0 48px;
   }
 }
-
-@mixin xs {
-  @media screen and (min-width: $xs) {
-    @content;
-  }
-}
-@mixin sm {
-  @media screen and (min-width: $sm) {
-    @content;
-  }
-}
-@mixin md {
-  @media screen and (min-width: $md) {
-    @content;
-  }
-}
-@mixin lg {
-  @media screen and (min-width: $lg) {
-    @content;
-  }
-}
