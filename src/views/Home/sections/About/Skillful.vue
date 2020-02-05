@@ -109,7 +109,7 @@ export default {
   &__title-wrapper {
     position: relative;
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
     svg {
       position: absolute;
       bottom: 50%;
@@ -133,8 +133,8 @@ export default {
       align-self: flex-start;
       font-size: 24px;
       font-weight: bold;
-      line-height: 1.6;
-      margin-bottom: 17px;
+      line-height: 1.35;
+      margin-bottom: 24px;
       cursor: pointer;
       transition: color .1s;
       &:last-child {

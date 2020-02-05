@@ -62,7 +62,7 @@ export default {
 
 <style lang="scss" scoped>
 .meet {
-  padding-bottom: 360px;
+  padding-bottom: 307px;
   &__title-wrapper {
     position: relative;
     display: inline-block;
