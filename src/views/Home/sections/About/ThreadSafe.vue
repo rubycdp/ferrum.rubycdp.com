@@ -30,6 +30,9 @@ export default {
 <style lang="scss" scoped>
 .thread-safe {
   padding-bottom: 307px;
+  @include md {
+    padding-bottom: 120px;
+  }
   &__title-wrapper {
     position: relative;
     display: inline-block;
@@ -38,10 +41,17 @@ export default {
       right: -64px;
       top: 50%;
       transform: translateY(-45%);
+      @include md {
+        right: -39px;
+        transform: translateY(-47%);
+      }
     }
   }
   &__title {
     margin-bottom: 48px;
+    @include md {
+      margin-bottom: 24px;
+    }
   }
   &__text {
     max-width: 665px;

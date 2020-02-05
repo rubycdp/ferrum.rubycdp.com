@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <Header class="home__header" />
+    <Header class="index__header" />
     <div class="index__center-wrapper">
       <h1 class="index__title">{{ title }}</h1>
       <div class="index__link">
@@ -66,9 +66,20 @@ export default {
     background-size: 100%;
     margin-bottom: 315px;
   }
+  @include md {
+    margin-bottom: 160px;
+  }
+  &__header {
+    @include md {
+      margin-bottom: 22px;
+    }
+  }
   &__title {
     max-width: 590px;
     margin: 10px 0 32px;
+    @include md {
+      max-width: 295px;
+    }
   }
   &__link {
     position: relative;
@@ -79,6 +90,7 @@ export default {
     @include lg {
       margin-bottom: 480px;
     }
+
     &:hover {
       a {
         color: $white;
@@ -94,12 +106,18 @@ export default {
       position: absolute;
       bottom: -5px;
       left: 0;
+      @include md {
+        transform: scale(0.7891) translate(-17px, 2px);
+      }
     }
   }
   &__scroll {
     padding-bottom: 25px;
     @include lg {
       padding-bottom: 0px;
+    }
+    @include md {
+      display: none;
     }
     a {
       display: inline-flex;

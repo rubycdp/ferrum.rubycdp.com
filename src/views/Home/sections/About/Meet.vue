@@ -63,6 +63,9 @@ export default {
 <style lang="scss" scoped>
 .meet {
   padding-bottom: 307px;
+  @include md {
+    padding-bottom: 120px;
+  }
   &__title-wrapper {
     position: relative;
     display: inline-block;
@@ -70,6 +73,11 @@ export default {
       position: absolute;
       bottom: 34px;
       left: 86px;
+      @include md {
+        transform: scale(0.6641);
+        bottom: 21px;
+        left: 38px;
+      }
     }
   }
   &__title {
@@ -80,6 +88,9 @@ export default {
     line-height: 1.6;
     margin-bottom: 95px;
     margin-top: 0;
+    @include md {
+      margin-bottom: 35px;
+    }
   }
   &__advantages {
     display: flex;
@@ -89,6 +100,9 @@ export default {
       margin-right: 160px;
       @include lg {
         margin-right: 11.92%;
+      }
+      @include md {
+        margin-right: 8.48%;
       }
       &:last-child {
         margin-right: 0;
@@ -102,6 +116,10 @@ export default {
       font-size: 24px;
       font-weight: bold;
       margin-top: auto;
+      @include md {
+        font-size: 20px;
+        letter-spacing: -1px;
+      }
     }
   }
 }

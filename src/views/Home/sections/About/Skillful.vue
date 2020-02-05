@@ -106,19 +106,36 @@ export default {
 <style lang="scss" scoped>
 .skillful {
   padding-bottom: 242px;
+  @include md {
+    padding-bottom: 120px;
+  }
+  &__title {
+    @include md {
+      margin-bottom: 32px;
+    }
+  }
   &__title-wrapper {
     position: relative;
     display: inline-block;
     margin-bottom: 43px;
+    @include md {
+      margin-bottom: 0;
+    }
     svg {
       position: absolute;
       bottom: 50%;
       transform: translateY(48%);
       &:first-child {
         left: -18px;
+        @include md {
+          transform: scale(0.6641) translate(0px, 75%);
+        }
       }
       &:last-child {
         right: -41px;
+        @include md {
+          transform: scale(0.6641) translate(-20px, 80%);
+        }
       }
     }
   }
@@ -132,6 +149,10 @@ export default {
       flex-shrink: 0;
       margin-right: 70px;
     }
+    @include md {
+      flex-shrink: 0;
+      margin-right: 25px;
+    }
     .skillful-skill {
       position: relative;
       align-self: flex-start;
@@ -141,6 +162,11 @@ export default {
       margin-bottom: 24px;
       cursor: pointer;
       transition: color .1s;
+      @include md {
+        font-size: 20px;
+        margin-bottom: 16px;
+        line-height: 1.2;
+      }
       &:last-child {
         margin-bottom: 0;
       }

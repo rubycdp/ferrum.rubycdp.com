@@ -37,9 +37,16 @@ export default {
 .footer {
   display: flex;
   padding: 48px 0;
+  @include md {
+    padding: 24px 0;
+  }
   &__developer, &__developer a {
     font-size: 16px;
     line-height: 2;
+    @include md {
+      font-size: 12px;
+      line-height: 2.7;
+    }
   }
   .color-dim {
     opacity: .3;

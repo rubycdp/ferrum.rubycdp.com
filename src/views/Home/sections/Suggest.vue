@@ -67,15 +67,27 @@ export default {
 <style lang="scss" scoped>
 .suggest {
   padding-bottom: 192px;
+  @include lg{
+    padding-bottom: 112px;
+  }
+  @include md {
+    padding-bottom: 56px;
+  }
   &__title-wrapper {
     position: relative;
     display: inline-block;
     margin-bottom: 43px;
+    @include md {
+      margin-bottom: 24px;
+    }
     svg {
       position: absolute;
       right: -54px;
       bottom: 50%;
       transform: translateY(47%);
+      @include md {
+        transform: scale(0.6641) translate(-23px, 72%);
+      }
     }
   }
   &__service-list {
@@ -85,6 +97,9 @@ export default {
     max-width: 46%;
     &:first-child {
       margin-right: 90px;
+      @include md {
+        margin-right: 58px;
+      }
     }
   }
   &-service {
@@ -95,10 +110,18 @@ export default {
       font-weight: bold;
       line-height: 100%;
       margin-bottom: 32px;
+      @include md {
+        font-size: 24px;
+        line-height: 1.35;
+        margin-bottom: 16px;
+      }
     }
     &__description {
       line-height: 1.6;
       margin-bottom: 48px;
+      @include md {
+        margin-bottom: 24px;
+      }
     }
     &__link {
       margin-top: auto;
@@ -106,6 +129,9 @@ export default {
       line-height: 1.6;
       color: $white;
       transition: color .1s;
+      @include md {
+        line-height: 1.2;
+      }
       &:hover {
         color: $red;
         svg path {
@@ -114,6 +140,10 @@ export default {
       }
       svg {
         margin-right: 24px;
+        @include md {
+          margin-right: 12px;
+          transform: scale(0.75) translate(-4px, 5px);;
+        }
         path {
           transition: fill .1s;
         }

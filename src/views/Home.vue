@@ -41,6 +41,9 @@ export default {
   background: $black;
   color: $white;
   font-size: 20px;
+  @include md {
+    font-size: 16px;
+  }
   .container {
     @include page-container;
   }
@@ -50,9 +53,15 @@ export default {
   }
   h1 {
     font-size: 80px;
+    @include md {
+      font-size: 40px;
+    }
   }
   h2 {
     font-size: 64px;
+    @include md {
+      font-size: 48px;
+    }
   }
   h1, h2 {
     text-transform: uppercase;
@@ -64,6 +73,9 @@ export default {
       z-index: 2;
       background: $black;
       margin-bottom: 320px;
+      @include md {
+        margin-bottom: 160px;
+      }
     }
     &_bottom {
       z-index: 1;
