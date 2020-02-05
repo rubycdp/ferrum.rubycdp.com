@@ -60,6 +60,12 @@ export default {
   min-height: 100%;
   max-height: 1400px;
   background: url("../../../assets/images/home/cover_illistration.png") 99% 29%/70% no-repeat;
+  @include lg {
+    height: 100%;
+    background-position: 50% 103%;
+    background-size: 100%;
+    margin-bottom: 315px;
+  }
   &__title {
     max-width: 590px;
     margin: 10px 0 32px;
@@ -70,6 +76,9 @@ export default {
     align-self: flex-start;
     margin-bottom: 30px;
     cursor: pointer;
+    @include lg {
+      margin-bottom: 480px;
+    }
     &:hover {
       a {
         color: $white;
@@ -89,6 +98,9 @@ export default {
   }
   &__scroll {
     padding-bottom: 25px;
+    @include lg {
+      padding-bottom: 0px;
+    }
     a {
       display: inline-flex;
       align-items: center;
