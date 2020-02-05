@@ -28,9 +28,9 @@ export default {
   data () {
     return {
       title: 'Meet',
-      text: `Ferrum provides you a high level API interface to Chrome browser and allows you 
+      text: `Ferrum provides you a high level API interface to Chrome browser and allows you
         to fully automate it and grab data from any public site you want. There’s no additional
-        software required — only Chrome, Ruby and you.`,
+        software required — blend 1/2 pure Chrome and 1/2 pure Ruby. Exciting mix. No addiction!`,
       advantages: [
         {
           text: 'Pure Chrome',
@@ -41,8 +41,8 @@ export default {
           imgPath: '/home/meet_ruby.png'
         },
         {
-          text: 'No addictions',
-          imgPath: '/home/meet_addictions.png'
+          text: 'No addiction',
+          imgPath: '/home/meet_addiction.png'
         }
       ]
     }
