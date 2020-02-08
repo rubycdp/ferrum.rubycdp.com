@@ -43,7 +43,8 @@ export default {
         {
           name: 'Cuprite',
           description: `Is a Capybara driver which uses Ferrum underneath.
-            Basically it makes Ferrum to be compatible with Capybara calls`,
+            It allows you to run your Capybara tests on a headless
+            Chromium/Chrome by CDP protocol.`,
           link: {
             text: 'Github',
             path: links.cuprite
@@ -51,8 +52,9 @@ export default {
         },
         {
           name: 'Vessel',
-          description: `In this simple framework you can build and start running
-            in parallel your crawler which works on top of Ferrum`,
+          description: `Is fast high-level web crawling Ruby framework that
+            works on top of Ferrum. Build your own google, crawl thousands of
+            websites per month!`,
           link: {
             text: 'Github',
             path: links.vessel
