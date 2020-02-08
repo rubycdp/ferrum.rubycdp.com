@@ -22,10 +22,10 @@ export default {
     return {
       copyright: '©2020 Machinio',
       developer: {
-        siteBy: 'Site by ',
+        siteBy: 'Made by ',
         link: {
           path: links.evrone,
-          text: 'evrone.com'
+          text: 'Ruby developers from Evrone'
         }
       }
     }
