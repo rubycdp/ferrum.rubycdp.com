@@ -22,10 +22,10 @@ export default {
   data () {
     return {
       links: [
-        {
-          text: 'Docs',
-          path: '/docs'
-        },
+        // {
+        //   text: 'Docs',
+        //   path: '/docs'
+        // },
         {
           text: 'GitHub',
           path: links.ferrum
