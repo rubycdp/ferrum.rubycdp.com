@@ -30,7 +30,7 @@ export default {
       title: 'Meet',
       text: `Ferrum provides you a high level API interface to Chrome browser and allows you
         to fully automate it and grab data from any public site you want. There’s no additional
-        software required — blend 1/2 pure Chrome and 1/2 pure Ruby. Exciting mix. No addiction!`,
+        software required — blend 1/2 pure Chrome with 1/2 pure Ruby. Exciting mix. No addiction!`,
       advantages: [
         {
           text: 'Pure Chrome',
