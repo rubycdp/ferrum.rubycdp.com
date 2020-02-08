@@ -8,17 +8,16 @@
     <div class="skillful__skills">
       <div class="skillful__triggers">
         <div
-          :class="getSkillClassList(index)"
+          class="skillful-skill"
           v-for="(skill, index) in skills"
           :key="index"
-          @click="setActiveSkillNumber(index)"
         >
-          <span>{{ skill.name }}</span>
+          <a :href="skill.href" target="_blank">{{ skill.name }}</a>
           <SVGUnderline />
         </div>
       </div>
       <div class="skillful__slides">
-        <img :src="activeSkillImagePath" alt="skill">
+        <img src="@/assets/images/home/skill_02.png" alt="skill">
       </div>
     </div>
   </div>
@@ -42,62 +41,25 @@ export default {
       skills: [
         {
           name: 'Navigation & finders',
-          imgName: 'skill_02.png'
+          href: 'https://github.com/route/ferrum#navigation'
         },
         {
           name: 'Screenshots',
-          imgName: 'skill_02.png'
+          href: 'https://github.com/route/ferrum#screenshots'
         },
         {
           name: 'Mouse & keyboard',
-          imgName: 'skill_02.png'
+          href: 'https://github.com/route/ferrum#mouse'
         },
         {
           name: 'Network, cookies, headers',
-          imgName: 'skill_02.png'
+          href: 'https://github.com/route/ferrum#network'
         },
         {
           name: 'JS, frames, dialogs',
-          imgName: 'skill_02.png'
+          href: 'https://github.com/route/ferrum#javascript'
         }
-      ],
-      activeSkillNumber: 0
-    }
-  },
-  computed: {
-    /**
-     * @returns string
-     */
-    activeSkillImagePath () {
-      const imgName = this.skills[this.activeSkillNumber].imgName
-      return this.getImgUrl(imgName)
-    }
-  },
-  methods: {
-    /**
-     * @param {number} index Skill number
-     * @returns array
-     */
-    getSkillClassList (index) {
-      return [
-        'skillful-skill',
-        index === this.activeSkillNumber ? 'skillful-skill_active' : ''
       ]
-    },
-    /**
-     * @param {number} index Skill number
-     * @returns void
-     */
-    setActiveSkillNumber (index) {
-      this.activeSkillNumber = index
-    },
-    /**
-     * Get dynamic image path
-     * @param {string} imgPath
-     * @returns string
-     */
-    getImgUrl (imgName) {
-      return require('@/assets/images/home/' + imgName)
     }
   }
 }
@@ -175,6 +137,9 @@ export default {
       margin-bottom: 24px;
       cursor: pointer;
       transition: color .1s;
+      a {
+        color: $white;
+      }
       @include sm {
         font-size: 20px;
         margin-bottom: 16px;
@@ -192,7 +157,9 @@ export default {
         margin-bottom: 0;
       }
       &:hover {
-        color: $red;
+        a {
+          color: $red;
+        }
         svg {
           opacity: 1;
           transition: opacity .1s;
@@ -206,7 +173,9 @@ export default {
         opacity: 0;
       }
       &_active {
-        color: $red;
+        a {
+          color: $red;
+        }
         svg {
           opacity: 1;
           transition: opacity .1s;
