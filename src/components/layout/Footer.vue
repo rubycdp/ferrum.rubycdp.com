@@ -20,9 +20,8 @@ export default {
   name: 'Footer',
   data () {
     return {
-      copyright: '©2020 Machinio',
       developer: {
-        siteBy: 'Made by ',
+        siteBy: 'Design made by ',
         link: {
           path: links.evrone,
           text: 'Ruby developers from Evrone'
