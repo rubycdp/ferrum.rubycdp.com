@@ -89,12 +89,19 @@ export default {
         @include sm {
           transform: scale(0.6641) translate(0px, 75%);
         }
+        @include xs {
+          left: -27px;
+        }
       }
       &:last-child {
         right: -48px;
         bottom: 45%;
         @include sm {
           transform: scale(0.6641) translate(-20px, 80%);
+        }
+        @include xs {
+          right: -53px;
+          bottom: 49%;
         }
       }
     }
