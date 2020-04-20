@@ -1,5 +1,5 @@
 <template>
-  <fixed-header :threshold="100">
+  <fixed-header :threshold="40">
     <header class="header">
         <div class="header__content" >
           <Logo />
