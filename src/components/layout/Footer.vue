@@ -21,10 +21,10 @@ export default {
   data () {
     return {
       developer: {
-        siteBy: 'Design made by ',
+        siteBy: 'Designed by ',
         link: {
           path: links.evrone,
-          text: 'Ruby developers from Evrone'
+          text: 'evrone.com'
         }
       }
     }
