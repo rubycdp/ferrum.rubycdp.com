@@ -13,7 +13,6 @@
           :key="index"
         >
           <a :href="skill.href" target="_blank">{{ skill.name }}</a>
-          <SVGUnderline />
         </div>
       </div>
       <div class="skillful__slides">
@@ -26,14 +25,12 @@
 <script>
 import SVGSkillTitleLeft from '@/assets/images/home/skill_title_l.svg'
 import SVGSkillTitleRight from '@/assets/images/home/skill_title_r.svg'
-import SVGUnderline from '@/assets/images/home/underline.svg'
 
 export default {
   name: 'Skillful',
   components: {
     SVGSkillTitleLeft,
-    SVGSkillTitleRight,
-    SVGUnderline
+    SVGSkillTitleRight
   },
   data () {
     return {
@@ -132,13 +129,15 @@ export default {
       position: relative;
       align-self: flex-start;
       font-size: 24px;
-      font-weight: bold;
+      font-weight: 500;
       line-height: 1.35;
       margin-bottom: 24px;
       cursor: pointer;
       transition: color .1s;
       a {
         color: $white;
+        opacity: 1;
+        transition: opacity .1s;
       }
       @include sm {
         font-size: 20px;
@@ -158,27 +157,13 @@ export default {
       }
       &:hover {
         a {
-          color: $red;
+          opacity: .7;
         }
-        svg {
-          opacity: 1;
-          transition: opacity .1s;
-        }
-      }
-      svg {
-        position: absolute;
-        bottom: -4px;
-        left: 0;
-        width: 100%;
-        opacity: 0;
       }
       &_active {
         a {
-          color: $red;
-        }
-        svg {
-          opacity: 1;
-          transition: opacity .1s;
+          // color: $red;
+          font-weight: bold;
         }
       }
     }
