@@ -71,8 +71,8 @@ export default {
     display: inline-block;
     svg {
       position: absolute;
-      bottom: 24px;
-      left: 92px;
+      bottom: 16px;
+      left: 185px;
       @include sm {
         transform: scale(0.6641);
         bottom: 21px;
@@ -84,14 +84,14 @@ export default {
     }
   }
   &__title {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     @include xs {
       margin-bottom: 24px;
     }
   }
   &__text {
     max-width: 653px;
-    line-height: 1.6;
+    line-height: 32px;
     margin-bottom: 95px;
     margin-top: 0;
     @include sm {
