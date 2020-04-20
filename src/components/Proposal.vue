@@ -46,6 +46,8 @@ export default {
       right: -118px;
       @include sm {
         transform: scale(0.5) translate(89px, 1px);
+        bottom: -44px;
+        right: -102px;
       }
     }
   }
