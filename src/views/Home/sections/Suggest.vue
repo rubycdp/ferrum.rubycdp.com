@@ -2,7 +2,6 @@
   <div class="suggest">
     <div class="suggest__title-wrapper">
       <h2 class="suggest__title">{{ title }}</h2>
-      <SVGUsefulTitle />
     </div>
     <div class="suggest__service-list">
       <div
@@ -27,13 +26,11 @@
 
 <script>
 import links from '@/data/links.js'
-import SVGUsefulTitle from '@/assets/images/home/useful_title.svg'
 import SVGArrowLeft from '@/assets/images/home/arrow_left.svg'
 
 export default {
   name: 'Suggest',
   components: {
-    SVGUsefulTitle,
     SVGArrowLeft
   },
   data () {
