@@ -42,18 +42,19 @@ export default {
     }
     svg {
       position: absolute;
-      bottom: -35px;
-      right: -68px;
+      bottom: -26px;
+      right: -118px;
       @include sm {
         transform: scale(0.5) translate(89px, 1px);
       }
     }
   }
   &__text {
-    font-size: 80px;
-    font-weight: bold;
-    color: $black;
-    text-transform: uppercase;
+    font-size: 96px;
+    font-weight: 900;
+    color: $white;
+    text-transform: lowercase;
+    letter-spacing: 1px;
     @include sm {
       font-size: 40px;
     }
