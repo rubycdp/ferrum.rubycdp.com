@@ -16,7 +16,6 @@
           target="_blank"
           class="suggest-service__link"
         >
-          <SVGArrowLeft />
           <span>{{ service.link.text }}</span>
         </a>
       </div>
@@ -26,34 +25,28 @@
 
 <script>
 import links from '@/data/links.js'
-import SVGArrowLeft from '@/assets/images/home/arrow_left.svg'
 
 export default {
   name: 'Suggest',
-  components: {
-    SVGArrowLeft
-  },
   data () {
     return {
       title: 'USEFUL',
       services: [
         {
           name: 'Cuprite',
-          description: `Is a Capybara driver which uses Ferrum underneath.
-            It allows you to run your Capybara tests on a headless
-            Chromium/Chrome by CDP protocol.`,
+          description: `Is a pure Ruby Capybara driver which uses Ferrum underneath. 
+            Basically it makes Ferrum to be compatible with Capybara calls`,
           link: {
-            text: 'Github',
+            text: 'See more',
             path: links.cuprite
           }
         },
         {
           name: 'Vessel',
-          description: `Is fast high-level web crawling Ruby framework that
-            works on top of Ferrum. Build your own google, crawl thousands of
-            websites per month!`,
+          description: `In this simple framework you can build and start running 
+            in parallel your crawler which works on top of Ferrum`,
           link: {
-            text: 'Github',
+            text: 'See more',
             path: links.vessel
           }
         }
@@ -96,7 +89,7 @@ export default {
     }
   }
   &__service {
-    max-width: 46%;
+    max-width: 43%;
     @include xs {
       max-width: 100%;
       margin-right: 0;
@@ -117,7 +110,6 @@ export default {
     flex-direction: column;
     &__name {
       font-size: 32px;
-      font-weight: bold;
       line-height: 100%;
       margin-bottom: 32px;
       @include sm {
@@ -128,7 +120,8 @@ export default {
     }
     &__description {
       line-height: 1.6;
-      margin-bottom: 48px;
+      line-height: 32px;
+      margin-bottom: 24px;
       @include sm {
         margin-bottom: 24px;
       }
@@ -137,6 +130,7 @@ export default {
       margin-top: auto;
       align-self: flex-start;
       line-height: 1.6;
+      font-weight: 500;
       color: $white;
       transition: color .1s;
       @include sm {
@@ -146,16 +140,6 @@ export default {
         color: $red;
         svg path {
           fill: $red;
-        }
-      }
-      svg {
-        margin-right: 24px;
-        @include sm {
-          margin-right: 12px;
-          transform: scale(0.75) translate(-4px, 5px);;
-        }
-        path {
-          transition: fill .1s;
         }
       }
     }

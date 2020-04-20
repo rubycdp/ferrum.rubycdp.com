@@ -54,6 +54,7 @@ export default {
   background: $black;
   color: $white;
   font-size: 16px;
+  font-weight: 300;
   @include sm {
     font-size: 16px;
   }
