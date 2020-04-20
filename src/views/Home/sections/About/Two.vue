@@ -1,21 +1,21 @@
 <template>
-  <div class="skillful">
-    <div class="skillful__title-wrapper">
+  <div class="two">
+    <div class="two__title-wrapper">
       <SVGSkillTitleLeft />
-      <h2 class="skillful__title">{{ title }}</h2>
+      <h2 class="two__title">{{ title }}</h2>
       <SVGSkillTitleRight />
     </div>
-    <div class="skillful__skills">
-      <div class="skillful__triggers">
+    <div class="two__skills">
+      <div class="two__triggers">
         <div
-          class="skillful-skill"
+          class="two-skill"
           v-for="(skill, index) in skills"
           :key="index"
         >
           <a :href="skill.href" target="_blank">{{ skill.name }}</a>
         </div>
       </div>
-      <div class="skillful__slides">
+      <div class="two__slides">
         <img src="@/assets/images/home/skill_02.png" alt="skill">
       </div>
     </div>
@@ -27,7 +27,7 @@ import SVGSkillTitleLeft from '@/assets/images/home/skill_title_l.svg'
 import SVGSkillTitleRight from '@/assets/images/home/skill_title_r.svg'
 
 export default {
-  name: 'Skillful',
+  name: 'Two',
   components: {
     SVGSkillTitleLeft,
     SVGSkillTitleRight
@@ -63,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.skillful {
+.two {
   padding-bottom: 242px;
   @include sm {
     padding-bottom: 120px;
@@ -133,7 +133,7 @@ export default {
       padding-bottom: 20px;
       margin-bottom: 28px;
     }
-    .skillful-skill {
+    .two-skill {
       position: relative;
       align-self: flex-start;
       font-size: 24px;
