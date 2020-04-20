@@ -1,17 +1,17 @@
 <template>
-  <div class="thread-safe">
-    <div class="thread-safe__title-wrapper">
-      <h2 class="thread-safe__title">{{ title }}</h2>
+  <div class="three">
+    <div class="three__title-wrapper">
+      <h2 class="three__title">{{ title }}</h2>
     </div>
-    <p class="thread-safe__text">{{ text }}</p>
-    <img src="@/assets/images/home/thread_safe.png" class="thread-safe__image" />
+    <p class="three__text">{{ text }}</p>
+    <img src="@/assets/images/home/thread_safe.png" class="three__image" />
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'ThreadSafe',
+  name: 'Three',
   data () {
     return {
       title: 'Thread safe',
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.thread-safe {
+.three {
   padding-bottom: 307px;
   @include sm {
     padding-bottom: 120px;
