@@ -85,13 +85,14 @@ export default {
       bottom: 50%;
       transform: translateY(48%);
       &:first-child {
-        left: -18px;
+        left: -37px;
         @include sm {
           transform: scale(0.6641) translate(0px, 75%);
         }
       }
       &:last-child {
-        right: -41px;
+        right: -48px;
+        bottom: 45%;
         @include sm {
           transform: scale(0.6641) translate(-20px, 80%);
         }
