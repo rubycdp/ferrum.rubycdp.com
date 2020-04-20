@@ -48,7 +48,7 @@ export default {
     }
   }
   &__title {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     @include sm {
       margin-bottom: 24px;
     }
@@ -57,8 +57,8 @@ export default {
     }
   }
   &__text {
-    max-width: 665px;
-    line-height: 1.6;
+    max-width: 560px;
+    line-height: 32px;
     margin: 0;
     @include xs {
       margin-bottom: 48px;
