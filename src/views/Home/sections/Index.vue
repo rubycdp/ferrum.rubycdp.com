@@ -4,7 +4,7 @@
     <div class="index__center-wrapper">
       <h1 class="index__title">{{ title }}</h1>
       <div class="index__links">
-        <a href="#scroll-meet" v-smooth-scroll="scrollOptions">
+        <a href="#scroll-one" v-smooth-scroll="scrollOptions">
           {{ explore }}
         </a>
         <a :href="links.ferrum.path" target="_blank">
