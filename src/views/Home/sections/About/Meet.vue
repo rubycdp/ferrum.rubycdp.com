@@ -75,8 +75,8 @@ export default {
       left: 185px;
       @include sm {
         transform: scale(0.6641);
-        bottom: 21px;
-        left: 38px;
+        bottom: 3px;
+        left: 56px;
       }
       @include xs {
         bottom: -3px;
@@ -133,6 +133,7 @@ export default {
       font-size: 24px;
       font-weight: 500;
       margin-top: auto;
+      white-space: nowrap;
       @include sm {
         font-size: 20px;
         letter-spacing: -1px;
