@@ -2,7 +2,6 @@
   <div class="thread-safe">
     <div class="thread-safe__title-wrapper">
       <h2 class="thread-safe__title">{{ title }}</h2>
-      <SVGThreadSaveTitle />
     </div>
     <p class="thread-safe__text">{{ text }}</p>
     <img src="@/assets/images/home/thread_safe.png" class="thread-safe__image" />
@@ -10,13 +9,9 @@
 </template>
 
 <script>
-import SVGThreadSaveTitle from '@/assets/images/home/thread_safe_title.svg'
 
 export default {
   name: 'ThreadSafe',
-  components: {
-    SVGThreadSaveTitle
-  },
   data () {
     return {
       title: 'Thread safe',
