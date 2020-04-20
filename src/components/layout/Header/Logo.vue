@@ -21,8 +21,5 @@ export default {
     transform: scale(0.6641) translate(-31px, -9px);
     max-height: 32px;
   }
-  path {
-    fill: $white;
-  }
 }
 </style>
