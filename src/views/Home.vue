@@ -53,7 +53,7 @@ export default {
   position: relative;
   background: $black;
   color: $white;
-  font-size: 20px;
+  font-size: 16px;
   @include sm {
     font-size: 16px;
   }
@@ -72,7 +72,8 @@ export default {
     }
   }
   h2 {
-    font-size: 64px;
+    font-size: 96px;
+    font-weight: 900;
     @include sm {
       font-size: 48px;
     }
