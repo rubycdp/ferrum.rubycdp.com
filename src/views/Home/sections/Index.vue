@@ -126,4 +126,14 @@ export default {
     }
   }
 }
+.index__header + .index__center-wrapper {
+  padding-top: 330px;
+  @include sm {
+    padding-top: 110px;
+  }
+}
+.index__header:not(.vue-fixed-header--isFixed)
+  + .index__center-wrapper {
+  padding-top: 0;
+}
 </style>
