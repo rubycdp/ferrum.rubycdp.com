@@ -131,7 +131,7 @@ export default {
     span {
       display: inline-block;
       font-size: 24px;
-      font-weight: bold;
+      font-weight: 500;
       margin-top: auto;
       @include sm {
         font-size: 20px;
