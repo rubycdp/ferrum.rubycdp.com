@@ -65,7 +65,8 @@ export default {
     text-decoration: none;
   }
   h1 {
-    font-size: 80px;
+    font-size: 96px;
+    font-weight: 900;
     @include sm {
       font-size: 40px;
     }
@@ -77,7 +78,7 @@ export default {
     }
   }
   h1, h2 {
-    text-transform: uppercase;
+    text-transform: lowercase;
     line-height: 100%;
   }
   .z-index-wrapper {

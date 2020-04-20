@@ -89,7 +89,7 @@ export default {
     }
   }
   &__title {
-    max-width: 590px;
+    max-width: 745px;
     margin: 10px 0 32px;
     @include sm {
       max-width: 295px;
