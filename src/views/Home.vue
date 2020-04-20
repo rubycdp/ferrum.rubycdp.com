@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <div class="z-index-wrapper z-index-wrapper_top">
+      <Header class="index__header" />
       <div class="container">
         <div class="home__section-list">
           <Index class="home__section home__section_index" />
@@ -22,6 +23,7 @@ import About from '@/views/Home/sections/About.vue'
 import Suggest from '@/views/Home/sections/Suggest.vue'
 import Footer from '@/components/layout/Footer.vue'
 import Proposal from '@/components/Proposal.vue'
+import Header from '@/components/layout/Header.vue'
 
 export default {
   name: 'Home',
@@ -30,7 +32,8 @@ export default {
     About,
     Suggest,
     Footer,
-    Proposal
+    Proposal,
+    Header
   },
   mounted () {
     this.setBodyBgBlack()
@@ -55,6 +58,7 @@ export default {
   color: $white;
   font-size: 16px;
   font-weight: 300;
+  padding-top: 20px;
   @include sm {
     font-size: 16px;
   }

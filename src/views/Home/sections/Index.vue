@@ -1,6 +1,5 @@
 <template>
   <div class="index">
-    <Header class="index__header" />
     <div class="index__center-wrapper">
       <h1 class="index__title">{{ title }}</h1>
       <div class="index__links">
@@ -18,12 +17,10 @@
 
 <script>
 import links from '@/data/links.js'
-import Header from '@/components/layout/Header.vue'
 
 export default {
   name: 'Index',
   components: {
-    Header
   },
   data () {
     return {
@@ -125,15 +122,5 @@ export default {
       }
     }
   }
-}
-.index__header + .index__center-wrapper {
-  padding-top: 330px;
-  @include sm {
-    padding-top: 110px;
-  }
-}
-.index__header:not(.vue-fixed-header--isFixed)
-  + .index__center-wrapper {
-  padding-top: 0;
 }
 </style>
