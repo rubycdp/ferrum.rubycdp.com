@@ -3,34 +3,26 @@
     <Header class="index__header" />
     <div class="index__center-wrapper">
       <h1 class="index__title">{{ title }}</h1>
-      <div class="index__link">
+      <div class="index__links">
+        <a href="#scroll-meet" v-smooth-scroll="scrollOptions">
+          {{ explore }}
+        </a>
         <a :href="links.ferrum.path" target="_blank">
           {{ links.ferrum.text }}
         </a>
-        <SVGUnderline />
       </div>
       <img class="index__bg-image" src="@/assets/images/home/cover_illistration.png" alt="image">
-    </div>
-    <div class="index__scroll">
-      <a href="#scroll-meet" v-smooth-scroll="scrollOptions">
-        <SVGArrowDown />
-        <span>{{ explore }}</span>
-      </a>
     </div>
   </div>
 </template>
 
 <script>
 import links from '@/data/links.js'
-import SVGUnderline from '@/assets/images/home/underline.svg'
-import SVGArrowDown from '@/assets/images/home/arrow_down.svg'
 import Header from '@/components/layout/Header.vue'
 
 export default {
   name: 'Index',
   components: {
-    SVGUnderline,
-    SVGArrowDown,
     Header
   },
   data () {
@@ -38,7 +30,7 @@ export default {
       title: 'Fearless Ruby Chrome driver',
       links: {
         ferrum: {
-          text: 'Go to GitHub',
+          text: 'GitHub',
           path: links.ferrum
         }
       },
@@ -54,13 +46,10 @@ export default {
 
 <style lang="scss" scoped>
 .index {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
   min-height: 100%;
   max-height: 1400px;
-  background: url("../../../assets/images/home/cover_illistration.png") 105% 63%/56% no-repeat;
+  background: url("../../../assets/images/home/cover_illistration.png") 105% 61%/56% no-repeat;
   @include md {
     height: 100%;
     background-position: 50% 143%;
@@ -84,6 +73,7 @@ export default {
     }
   }
   &__header {
+    margin-bottom: 166px;
     @include sm {
       margin-bottom: 22px;
     }
@@ -99,7 +89,7 @@ export default {
       margin-bottom: 16px;
     }
   }
-  &__link {
+  &__links {
     position: relative;
     display: inline-block;
     align-self: flex-start;
@@ -115,51 +105,20 @@ export default {
       margin-bottom: 0px;
     }
 
-    &:hover {
-      a {
-        color: $white;
-      }
-    }
     a {
       display: inline-block;
-      color: $red;
-      line-height: 1.6;
-      transition: color .1s;
-    }
-    svg {
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      @include sm {
-        transform: scale(0.7891) translate(-17px, 2px);
-      }
-    }
-  }
-  &__scroll {
-    padding-bottom: 25px;
-    @include md {
-      padding-bottom: 0px;
-    }
-    @include sm {
-      display: none;
-    }
-    a {
-      display: inline-flex;
-      align-items: center;
       color: $white;
       line-height: 1.6;
-      transition: color .1s;
-      &:hover {
-        color: $red;
-        svg path {
-          fill: $red;
-        }
-      }
-      svg {
+      transition: color .1s, background .1s;
+      padding: 8px 32px;
+      border-radius: 4px;
+      border: 2px solid white;
+      &:first-child {
         margin-right: 24px;
-        path {
-          transition: fill .1s;
-        }
+      }
+      &:hover {
+        color: $black;
+        background: $white;
       }
     }
   }
