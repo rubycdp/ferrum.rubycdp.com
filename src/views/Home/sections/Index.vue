@@ -52,8 +52,8 @@ export default {
   background: url("../../../assets/images/home/cover_illistration.png") 105% 61%/56% no-repeat;
   @include md {
     height: 100%;
-    background-position: 50% 143%;
-    background-size: 100%;
+    background-position: 50% 100%;
+    background-size: 75%;
     margin-bottom: 315px;
   }
   @include sm {
@@ -64,10 +64,6 @@ export default {
   }
   &__bg-image {
     display: none;
-    margin-left: -22%;
-    margin-top: -5%;
-    width: 126%;
-    max-width: fit-content;
     @include xs {
       display: block;
     }
@@ -119,6 +115,13 @@ export default {
       &:hover {
         color: $black;
         background: $white;
+      }
+      @include xs {
+        font-size: 14px;
+        padding: 6px 24px;
+        &:first-child {
+          display: none;
+        }
       }
     }
   }
