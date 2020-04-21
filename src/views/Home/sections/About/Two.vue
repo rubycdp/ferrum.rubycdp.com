@@ -38,23 +38,23 @@ export default {
       skills: [
         {
           name: 'Navigation & finders',
-          href: 'https://github.com/route/ferrum#navigation'
+          href: 'https://github.com/rubycdp/ferrum#navigation'
         },
         {
           name: 'Screenshots',
-          href: 'https://github.com/route/ferrum#screenshots'
+          href: 'https://github.com/rubycdp/ferrum#screenshots'
         },
         {
           name: 'Mouse & keyboard',
-          href: 'https://github.com/route/ferrum#mouse'
+          href: 'https://github.com/rubycdp/ferrum#mouse'
         },
         {
           name: 'Network, cookies, headers',
-          href: 'https://github.com/route/ferrum#network'
+          href: 'https://github.com/rubycdp/ferrum#network'
         },
         {
           name: 'JS, frames, dialogs',
-          href: 'https://github.com/route/ferrum#javascript'
+          href: 'https://github.com/rubycdp/ferrum#javascript'
         }
       ]
     }
