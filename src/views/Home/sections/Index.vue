@@ -46,7 +46,7 @@ export default {
   height: 100vh;
   min-height: 100%;
   max-height: 1400px;
-  background: url("../../../assets/images/home/cover_illistration.png") 86% 52%/45% no-repeat;
+  background: url("../../../assets/images/home/cover_illistration.png") 86% 1%/45% no-repeat;
   @include md {
     height: 100%;
     background-position: 50% 100%;
